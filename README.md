@@ -3,9 +3,13 @@ It's a simple spring boot application which is similar to Twitter. I had tried t
 
 #Please note that there is no Spring Security implemented inside the project. 
 
-############################################################################CONFIGURATION#########################################################################
+#############CONFIGURATION#########################################################################
+Mysql  5.7.31
+Java 1.8.0_265
+Apache Maven 3.6.3
 
-############################################################################USAGE PROCESS#########################################################################
+
+#############USAGE PROCESS#########################################################################
 - First of all, in order to create correct database architecture the sql dump named "TwitterCloneDDl.sql" should be sources in MySQL.
 - Navigate to the project's class path and run "mvn eclipse:eclipse" command (If Maven is installed on your system) to make the project eclipse compatible.
 - Import the project inside your Eclipse.
@@ -17,7 +21,7 @@ It's a simple spring boot application which is similar to Twitter. I had tried t
 
 Cheers!
 
-############################################################################API DETAILS###########################################################################
+#############API DETAILS###########################################################################
 
 The following is the list of APIs provided in the project:
 USER REGISTRATION (User A)
@@ -99,7 +103,7 @@ FETCH ALL POSTS WHICH USER LIKED AND ALSO ALL POSTS OF PEOPLE TO WHOME USER FOLL
 	- Method Type: GET
 	- Request JSON: N/A
 
-############################################################################ERROR DETAILS#########################################################################
+#############ERROR DETAILS#########################################################################
 
 Following are the errors handled by respective APIs:
 USER REGISTRATION
@@ -139,3 +143,4 @@ Future Upgrades:
 - More detailed error handling will be accomplished.
 - JUnit Tests will be written for the same.
 - Database wipeout functionality will be handled at every deployement done on server.
+- POSTMAN Collections to run the APIs in a single set will be created.
